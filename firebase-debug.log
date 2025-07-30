@@ -1,0 +1,100 @@
+[debug] [2025-07-30T04:40:51.919Z] ----------------------------------------------------------------------
+[debug] [2025-07-30T04:40:51.922Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-07-30T04:40:51.922Z] CLI Version:   14.11.1
+[debug] [2025-07-30T04:40:51.922Z] Platform:      win32
+[debug] [2025-07-30T04:40:51.922Z] Node Version:  v22.16.0
+[debug] [2025-07-30T04:40:51.922Z] Time:          Tue Jul 29 2025 21:40:51 GMT-0700 (Pacific Daylight Time)
+[debug] [2025-07-30T04:40:51.923Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-30T04:40:51.928Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-30T04:40:51.928Z] > authorizing via signed-in user (rubensmith182@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hp\Desktop\More Logas Minee
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-07-30T04:43:00.948Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:43:00.948Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:43:00.951Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-30T04:43:00.951Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"eSafeVerify"}
+[debug] [2025-07-30T04:43:01.613Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-30T04:43:01.613Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"esafeverify"}
+[debug] [2025-07-30T04:43:32.820Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:43:32.821Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:43:32.822Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-30T04:43:32.822Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"AuthGate"}
+[debug] [2025-07-30T04:43:33.475Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-30T04:43:33.475Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"authgate-1bc60"}
+[debug] [2025-07-30T04:43:53.627Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:43:53.627Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:43:53.628Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-30T04:43:53.628Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"AuthGate-Pass"}
+[debug] [2025-07-30T04:43:54.193Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-30T04:43:54.193Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"authgate-pass"}
+[debug] [2025-07-30T04:44:01.876Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:01.876Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:01.878Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-30T04:44:01.878Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"AuthGate-pass"}
+[debug] [2025-07-30T04:44:02.395Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-30T04:44:02.395Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"authgate-pass"}
+[debug] [2025-07-30T04:44:10.350Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:10.350Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:10.351Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-30T04:44:10.351Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"Authgate-pass"}
+[debug] [2025-07-30T04:44:10.796Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-30T04:44:10.796Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"authgate-pass"}
+[debug] [2025-07-30T04:44:19.714Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:19.714Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:19.716Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-30T04:44:19.716Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"authgate-pass"}
+[debug] [2025-07-30T04:44:20.286Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-30T04:44:20.286Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"authgate-pass"}
+[debug] [2025-07-30T04:44:24.802Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:24.802Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:24.803Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-07-30T04:44:24.803Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"authgate-pass","name":"authgate-pass"}
+[debug] [2025-07-30T04:44:25.913Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-07-30T04:44:25.913Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6752514796596538777"}
+[debug] [2025-07-30T04:44:25.914Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:25.914Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:25.914Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 [none]
+[debug] [2025-07-30T04:44:26.641Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 200
+[debug] [2025-07-30T04:44:26.641Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 {"name":"operations/create_project.global.6752514796596538777"}
+[debug] [2025-07-30T04:44:27.146Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-07-30T04:44:27.147Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:27.147Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:27.148Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 [none]
+[debug] [2025-07-30T04:44:27.439Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 200
+[debug] [2025-07-30T04:44:27.439Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 {"name":"operations/create_project.global.6752514796596538777"}
+[debug] [2025-07-30T04:44:28.440Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-07-30T04:44:28.441Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:28.441Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:28.442Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 [none]
+[debug] [2025-07-30T04:44:28.720Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 200
+[debug] [2025-07-30T04:44:28.720Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6752514796596538777 {"name":"operations/create_project.global.6752514796596538777","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"698675669052","projectId":"authgate-pass","lifecycleState":"ACTIVE","name":"authgate-pass","createTime":"2025-07-30T04:44:26.827388Z"}}
+[debug] [2025-07-30T04:44:28.721Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:28.721Z] Checked if tokens are valid: true, expires at: 1753854011811
+[debug] [2025-07-30T04:44:28.722Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/authgate-pass:addFirebase [none]
+[debug] [2025-07-30T04:44:30.063Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/authgate-pass:addFirebase 403
+[debug] [2025-07-30T04:44:30.063Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/authgate-pass:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-07-30T04:44:30.065Z] Request to https://firebase.googleapis.com/v1beta1/projects/authgate-pass:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-07-30T04:44:30.067Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/authgate-pass:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
